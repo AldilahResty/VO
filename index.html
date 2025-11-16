@@ -54,7 +54,7 @@
                 <h3>Voice Over Iklan</h3>
                 <p>Suara dinamis untuk iklan TV, radio, dan digital. Cocok untuk branding dan promosi.</p>
                 <audio class="audio-player" controls>
-                    <source src="c:\Users\aldilah resty\Downloads\Profesional.mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda, misalnya: https://dl.dropboxusercontent.com/s/yourfile.mp3 -->
+                    <source src="profesional.mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda, misalnya: https://dl.dropboxusercontent.com/s/yourfile.mp3 -->
                     Browser Anda tidak mendukung elemen audio.
                 </audio>
             </div>
@@ -63,7 +63,7 @@
                 <h3>Audiobook Narasi</h3>
                 <p>Narasi buku audio dengan emosi dan intonasi yang tepat untuk pengalaman mendengarkan yang menarik.</p>
                 <audio class="audio-player" controls>
-                    <source src="c:\Users\aldilah resty\Downloads\Narasi -Podcast.mp3" type="audio/mp3"> <!-- Placeholder; ganti dengan file Anda -->
+                    <source src="narasiaudiobook.mp3" type="audio/mp3"> <!-- Placeholder; ganti dengan file Anda -->
                     Browser Anda tidak mendukung elemen audio.
                 </audio>
             </div>
@@ -72,7 +72,7 @@
                 <h3>Voice Over Kustom/Karakter</h3>
                 <p>Sesuaikan suara untuk kebutuhan spesifik, seperti e-learning, podcast, atau animasi.</p>
                 <audio class="audio-player" controls>
-                    <source src="c:\Users\aldilah resty\Downloads\Casting VO\MP3\Resty Referensi 5 (Female).mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda -->
+                    <source src="karakter.mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda -->
                     Browser Anda tidak mendukung elemen audio.
                 </audio>
             </div>
@@ -83,8 +83,7 @@
         <h2 style="text-align: center;">Hubungi Kami</h2>
 
         <div class="contact-list">
-        <p>📞 WhatsApp: <b>https://wa.me/6281388561201?text=Halo%20Saya%20butuh%20jasa%20voice%20over
-</b></p>
+        <p>📞 WhatsApp: <b>081388561201</b></p>
         <p>📧 Email: <b>resty0412@gmail.com</b></p>
         
     </div>
@@ -102,6 +101,18 @@
 
     <script>
         // Animasi sederhana dan validasi formulir
+        document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nama = document.querySelector('input[placeholder="Nama Lengkap"]').value;
+    const email = document.querySelector('input[placeholder="Email Anda"]').value;
+    const pesan = document.querySelector('textarea').value;
+
+    const url = `https://wa.me/6281388561201?text=Halo,%20saya%20${nama}%20(${email})%0A${pesan}`;
+    window.open(url, '_blank');
+});
+
+
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Terima kasih! Kami akan segera menghubungi Anda untuk diskusi proyek.');
