@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Voice Over Profesional - Suara Berkualitas</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; overflow-x: hidden; }
+        header { background: rgba(0, 0, 0, 0.8); color: white; padding: 20px; text-align: center; position: fixed; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        nav { margin-top: 10px; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ffd700; }
+        .hero { background: url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); animation: fadeIn 2s ease-in; }
+        .hero h1 { font-size: 4em; margin-bottom: 20px; }
+        .hero p { font-size: 1.5em; }
+        section { padding: 80px 20px; max-width: 1200px; margin: auto; background: white; border-radius: 10px; margin-top: -50px; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        .service { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .service:hover { transform: translateY(-10px); }
+        .service img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        .audio-player { margin-top: 15px; width: 100%; }
+        .contact { background: #f8f9fa; padding: 40px; border-radius: 10px; }
+        form { display: grid; gap: 15px; }
+        input, textarea { padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+        button { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.2em; transition: background 0.3s; }
+        button:hover { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5em; } .services { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voice Over Studio</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#services">Layanan</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Suara Berkualitas Menginspirasi Dunia </h1>
+            <p>Jasa voice over profesional untuk iklan, film, audiobook, dan proyek kreatif Anda. Dengarkan contoh suara kami!</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 style="text-align: center; color: #333;">Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Voice Over Iklan">
+                <h3>Voice Over Iklan</h3>
+                <p>Suara dinamis untuk iklan TV, radio, dan digital. Cocok untuk branding dan promosi.</p>
+                <audio class="audio-player" controls>
+                    <source src="c:\Users\aldilah resty\Downloads\Profesional.mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda, misalnya: https://dl.dropboxusercontent.com/s/yourfile.mp3 -->
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Audiobook Narasi">
+                <h3>Audiobook Narasi</h3>
+                <p>Narasi buku audio dengan emosi dan intonasi yang tepat untuk pengalaman mendengarkan yang menarik.</p>
+                <audio class="audio-player" controls>
+                    <source src="c:\Users\aldilah resty\Downloads\Narasi -Podcast.mp3" type="audio/mp3"> <!-- Placeholder; ganti dengan file Anda -->
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Voice Over Kustom">
+                <h3>Voice Over Kustom/Karakter</h3>
+                <p>Sesuaikan suara untuk kebutuhan spesifik, seperti e-learning, podcast, atau animasi.</p>
+                <audio class="audio-player" controls>
+                    <source src="c:\Users\aldilah resty\Downloads\Casting VO\MP3\Resty Referensi 5 (Female).mp3" type="audio/wav"> <!-- Ganti dengan file audio Anda -->
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="text-align: center;">Hubungi Kami</h2>
+
+        <div class="contact-list">
+        <p>📞 WhatsApp: <b>https://wa.me/6281388561201?text=Halo%20Saya%20butuh%20jasa%20voice%20over
+</b></p>
+        <p>📧 Email: <b>resty0412@gmail.com</b></p>
+        
+    </div>
+        <form>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Deskripsikan proyek Anda (misalnya, jenis voice over dan durasi)" rows="5" required></textarea>
+            <button type="submit">Kirim Permintaan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Voice Over Studio. Dibuat dengan ❤️ untuk suara berkualitas.</p>
+    </footer>
+
+    <script>
+        // Animasi sederhana dan validasi formulir
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Kami akan segera menghubungi Anda untuk diskusi proyek.');
+            // Tambahkan logika untuk mengirim email atau integrasi backend jika diperlukan
+        });
+
+        // Smooth scroll untuk navigasi
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
